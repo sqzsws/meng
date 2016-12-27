@@ -5,6 +5,6 @@
     <title>LOGIN</title>
 </head>
 <body>
-    登录
+    <a href="<?php echo url('admin/login/login');?>">登录</a>
 </body>
 </html>

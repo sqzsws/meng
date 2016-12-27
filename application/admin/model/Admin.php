@@ -7,6 +7,10 @@ use think\Model;
 class Admin extends Model
 {
     function checkAuthority(){
+        $adminInfo = session("adminInfo");
+        if (empty($adminInfo)) {
+            return false;
+        }
         return true;
     }
 }

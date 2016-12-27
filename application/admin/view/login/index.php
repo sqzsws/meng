@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>LOGIN</title>
-</head>
-<body>
-    <a href="<?php echo url('admin/login/login');?>">登录</a>
-</body>
-</html>
+<?php require dirname(dirname(__FILE__)).DS."head.php"; ?>
+<a href="<?php echo url('admin/login/login');?>">登录</a>
+<?php include dirname(dirname(__FILE__)).DS."foot.php"; ?>

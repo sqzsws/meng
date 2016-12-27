@@ -1,11 +1,11 @@
 <?php 
 namespace app\admin\extension;
-use think\Controller;
+use app\admin\extension\CController;
 use app\admin\model\Admin;
 /**
-* admin前置控制器
+* admin权限控制器
 */
-class AdminController extends Controller
+class AdminController extends CController
 {
     
     function __construct()

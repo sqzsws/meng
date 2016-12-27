@@ -1,0 +1,4 @@
+*{padding: 0;border: 0;margin: 0}
+li,ol{list-style: none;}
+a{text-decoration: none;}
+.head{height: 300px;background: rgba(0,0,0,.2);}

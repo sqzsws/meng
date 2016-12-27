@@ -62,8 +62,6 @@ class Uploader
         } else {
             $this->upFile();
         }
-
-        $this->stateMap['ERROR_TYPE_NOT_ALLOWED'] = iconv('unicode', 'utf-8', $this->stateMap['ERROR_TYPE_NOT_ALLOWED']);
     }
 
     /**
@@ -73,6 +71,7 @@ class Uploader
     private function upFile()
     {
         $file = $this->file = $_FILES[$this->fileField];
+        //var_dump($_FILES);die;
         if (!$file) {
             $this->stateInfo = $this->getStateInfo("ERROR_FILE_NOT_FOUND");
             return;

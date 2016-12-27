@@ -1,7 +1,7 @@
 <?php
 namespace app\admin\controller;
-use think\Controller;
-class Login extends Controller
+use app\admin\extension\CController;
+class Login extends CController
 {
     public function index()
     {
@@ -9,6 +9,7 @@ class Login extends Controller
     }
     public function login()
     {
+        model("admin")->where(["admin"]);
         $data = ["id"=>1,"name"=>"admin"];
         session("adminInfo",$data);
         $this->success("登陆成功","admin/index/index");

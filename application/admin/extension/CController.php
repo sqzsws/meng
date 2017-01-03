@@ -11,7 +11,7 @@ class CController extends Controller
     {
         parent::__construct();
         $view = $this->view;
-        $view->title = "首页";
+        $view->title = "";
         $view->static = [];
     }
 }
